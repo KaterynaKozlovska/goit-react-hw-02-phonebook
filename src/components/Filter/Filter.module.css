@@ -1,0 +1,8 @@
+.filter__label {
+  font-size: 14px;
+}
+
+.filter__input {
+  width: 200px;
+  padding: 5px;
+}

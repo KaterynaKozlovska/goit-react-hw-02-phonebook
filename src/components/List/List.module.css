@@ -1,0 +1,13 @@
+.list {
+  padding-left: 35px;
+}
+
+.item {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
