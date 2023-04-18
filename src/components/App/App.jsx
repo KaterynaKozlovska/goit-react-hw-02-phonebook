@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import useLocalStorage from '../hooks/useLocalStorage';
+import useLocalStorage from '../../hooks/useLocalStorage';
 import { ContactForm } from '../Form/Form';
 import { ContactList } from '../List/List';
 import { Filter } from '../Filter/Filter';

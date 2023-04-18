@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getFromStorage, saveToStorage } from '../services/localStorageService';
+import { getFromStorage, saveToStorage } from 'services/localStorageService';
 
 export default function useLocalStorage(key, defaultValue) {
   const [state, setState] = useState(() => {
