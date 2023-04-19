@@ -4,9 +4,9 @@ import { ContactForm } from '../Form/Form';
 import { ContactList } from '../List/List';
 import { Filter } from '../Filter/Filter';
 import css from './App.module.css';
-import React, { Component } from 'react';
+import { React, Component } from 'react';
 
-class App extends Component. {
+class App extends Component {
   state = {
     contacts: [
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -47,9 +47,9 @@ class App extends Component. {
     );
   };
 
-  deleteContact = contactId => {
+  deleteContact = contactid => {
     this.setState(prevState => ({
-      contacts: prevState.contacts.filter(contact => contact.id !== contactId),
+      contacts: prevState.contacts.filter(contact => contact.id !== contactid),
     }));
   };
 

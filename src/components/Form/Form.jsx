@@ -6,6 +6,7 @@ const INITIAL_STATE = {
   name: '',
   number: '',
 };
+
 export class ContactForm extends Component {
   state = { ...INITIAL_STATE };
 
@@ -21,8 +22,8 @@ export class ContactForm extends Component {
     this.reset();
   };
   createID = () => {
-    const contactId = nanoid(4);
-    this.setState({ id: contactId });
+    const contactid = nanoid(4);
+    this.setState({ id: contactid });
   };
 
   reset = () => {
@@ -40,7 +41,7 @@ export class ContactForm extends Component {
             className={css.input}
             type="text"
             name="name"
-            contactId={id}
+            contactid={id}
             value={name}
             onChange={this.handleChange}
             pattern="^[a-zA-Za-яА-Я]+(([' -][a-zA-Za-яА-Я ])?[a-zA-Za-яА-Я]*)*$"
@@ -54,7 +55,7 @@ export class ContactForm extends Component {
             className={css.input}
             type="tel"
             name="number"
-            contactId={id}
+            contactid={id}
             value={number}
             onChange={this.handleChange}
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
